@@ -116,7 +116,7 @@ const App = () => {
 
     try {
       // Send a POST request to the API with the prompt in the request body
-      const response = await axios.post('get-prompt-result', {
+      const response = await axios.post('get-prompt-result?code=ETMBHMINm_W27jRY2a_TqBJXhZoEe4_RVOCtvthZ5hgEAzFuJN5Otw==', {
         prompt: _prompt,
         messages: newMessages,
         model: modelValue
@@ -159,7 +159,7 @@ const App = () => {
         </div>
         )
       }
-      <div id="model-select-container">
+      {/* <div id="model-select-container">
         <label htmlFor="model-select">Select model:</label>
         <select id="model-select" value={modelValue} onChange={(event) => setModelValue(event.target.value as ModelValueType)}>
           <option value="gpt">GPT-3 (Understand and generate natural language )</option>
@@ -167,7 +167,7 @@ const App = () => {
           </option>
           <option value="image">Create Image (Create AI image using DALL·E models)</option>
         </select>
-      </div>
+      </div> */}
       <div id="input-container">
         <PromptInput
           prompt={prompt}

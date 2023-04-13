@@ -6,7 +6,7 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
+axios.defaults.baseURL = 'http://chatgpt-azure-function-backend.azurewebsites.net/api/';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
