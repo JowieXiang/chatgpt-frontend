@@ -5,7 +5,7 @@ import './App.css';
 import { ResponseInterface } from "../PromptResponseList/response-interface";
 import PromptResponseList from "../PromptResponseList/PromptResponseList";
 
-type ModelValueType = 'gpt' | 'codex' | 'image';
+// type ModelValueType = 'gpt' | 'codex' | 'image';
 const App = () => {
 
   const [responseList, setResponseList] = useState<ResponseInterface[]>([]);
@@ -16,7 +16,7 @@ const App = () => {
   }]);
   const [promptToRetry, setPromptToRetry] = useState<string | null>(null);
   const [uniqueIdToRetry, setUniqueIdToRetry] = useState<string | null>(null);
-  const [modelValue, setModelValue] = useState<ModelValueType>('gpt');
+  // const [modelValue, setModelValue] = useState<ModelValueType>('gpt');
   const [isLoading, setIsLoading] = useState(false);
   let loadInterval: number | undefined;
 
@@ -119,7 +119,7 @@ const App = () => {
       const response = await axios.post('get-prompt-result?code=ETMBHMINm_W27jRY2a_TqBJXhZoEe4_RVOCtvthZ5hgEAzFuJN5Otw==', {
         prompt: _prompt,
         messages: newMessages,
-        model: modelValue
+        // model: modelValue
       });
       updateResponse(uniqueId, {
         response: response.data.trim(),
