@@ -2,7 +2,7 @@
 .response-container {
     margin-bottom: 10px;
     color: white;
-    padding: 15px 200px;
+    padding: 15px 0;
     font-size: 1rem;
     display: flex;
 }
@@ -35,6 +35,11 @@
     margin-top: 0;
 }
 
+.response-content {
+    width: 80%;
+    margin: auto;
+}
+
 .ai-image {
     width: 500px;
     height: auto;
@@ -46,25 +51,43 @@
 
 /* Override hljs to match for chatgpt */
 .hljs {
-    background: rgb(0,0,0) !important;
+    background: rgb(0, 0, 0) !important;
     color: white !important;
     display: block;
     padding: 10px;
     border-radius: 6px;
 }
 
-.hljs-section, .hljs-title {
+.hljs-section,
+.hljs-title {
     color: #f22c3d !important;
 }
 
-.hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
     color: #df3079 !important;
 }
 
-.hljs-addition, .hljs-built_in, .hljs-bullet, .hljs-code {
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
     color: #e9950c !important;
 }
 
-.hljs-link, .hljs-operator, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
     color: white !important;
 }
